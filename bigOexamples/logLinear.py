@@ -1,8 +1,5 @@
-# '''
-# This code sample demonstrates splitting an input in half
-# at every step of a loop. We see this in things like binary sarch
-# or some kinds of sorts.
-# '''
+#
+# O(n*log(n))
 
 from timethis import timethis
 import time

@@ -1,9 +1,9 @@
 # '''
 # This code sample demonstrates splitting an input in half
-# at every step of a loop. We see this in things like binary sarch
+# at every step of a loop. We see this in things like binary search
 # or some kinds of sorts.
 # '''
-
+# O(log(n))
 from timethis import timethis
 import time
 
@@ -11,7 +11,7 @@ import time
 def split_in_two(i):
     while i > 1:
         i = i/2
-        time.sleep(0.01) #We need to insert an arbitrary delay otherwise it is too fast
+        time.sleep(0.01)  # We need to insert an arbitrary delay otherwise it is too fast
 
 split_in_two(50)
 split_in_two(100)

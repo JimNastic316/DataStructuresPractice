@@ -5,6 +5,8 @@
 # the element on the left but smaller than the element on the right.
 # '''
 
+# O(n^2)
+
 from timethis import timethis
 import random
 

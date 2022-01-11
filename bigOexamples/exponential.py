@@ -5,6 +5,8 @@
 # hit the base case.
 # '''
 
+# O(2^n)
+
 from timethis import timethis
 
 # Due to the recursive call we need to time a helper function

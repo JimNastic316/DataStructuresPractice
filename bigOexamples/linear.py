@@ -2,6 +2,8 @@
 This loop does O(n) by summing all the numbers in a list.
 '''
 
+# O(n)
+
 from timethis import timethis
 
 @timethis
