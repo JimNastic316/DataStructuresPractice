@@ -24,6 +24,6 @@ def bubble(arr):
 # '''
 
 
-for i in [250,500,1000,2000,4000]:
+for i in [250,500,1000,2000,4000,8000]:
     my_list = [random.randint(0,i) for x in range(i)]
     bubble(my_list)
