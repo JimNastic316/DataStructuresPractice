@@ -26,10 +26,28 @@ class LinkedList:
             last_node = last_node.next
         last_node.next = new_node
 
+    def prepend(self, data):
+        new_node = Node(data)
+        # point new node to old head of list
+        new_node.next = self.head
+        self.head = new_node
+
+    def insert_after_node(self, prev_node, data):
+        # verify that prev_node is there
+        if not prev_node:
+            print("Previous nod is not in the list")
+            return
+
+        new_node = Node(data)
+        new_node.next = prev_node.next
+        prev_node.next = new_node
 #####################################################
 
 llist = LinkedList()
 llist.append("A")
 llist.append("B")
+llist.append("C")
+llist.append("D")
 
+llist.insert_after_node(llist.head.next, "E")
 llist.print_list()

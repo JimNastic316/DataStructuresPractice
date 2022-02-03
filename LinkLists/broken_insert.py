@@ -7,11 +7,29 @@ class Node:
 #This insert function cuts off the list and needs to be fixed
 def insert(value, head, index):
     cur = head
-    print("value = {}, head = {}, index = {}".format(value, head, index))
     for i in range(index):
         cur = cur.next
-        print('cur.next = {}'.format(cur.next))
-    cur.next = Node(value)
+
+    temp = Node(value)
+    temp.next = cur.next
+    cur.next = temp
+
+
+    # cur = head
+    # # print("value = {}, head = {}, index = {}".format(value, head, index))
+    # for i in range(index):
+    #     print('index = {}, cur.next.val = {}'.format(index, cur.next.val))
+    #     if cur.next == index:
+    #         print(cur.val)
+    #         new_node = Node()
+    #         new_node.next = cur.next
+    #         new_node.val = value
+    #         # print('new_node.val {} = value {}'.format(new_node.val, value))
+    #         cur.next = new_node
+    #         return
+    #     cur = cur.next
+    #     # print('cur.next = {}'.format(cur.next))
+    # # cur.next = Node(value)
 
 
 # def insert(value, head, index):
